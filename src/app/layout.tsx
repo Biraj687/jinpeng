@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, DM_Sans } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -28,11 +29,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark bg-[#0B0C0E]">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.variable} ${dmSans.variable} bg-[#0B0C0E] text-[#F4F4F6] font-[family-name:var(--font-dm-sans)] antialiased selection:bg-white/10 selection:text-white`}
+        className={`${spaceGrotesk.variable} ${dmSans.variable} font-[family-name:var(--font-dm-sans)] bg-[#F8F9FA] dark:bg-[#0B0C0E] text-[#111215] dark:text-[#F4F4F6] antialiased selection:bg-[#E8371B]/20 selection:text-[#E8371B] transition-colors duration-300`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

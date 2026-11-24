@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <SmoothScroll>
       <Navbar />
-      <main className="w-full bg-[#0B0C0E] text-[#F4F4F6]">
+      <main className="w-full bg-[#F8F9FA] dark:bg-[#0B0C0E] text-[#111215] dark:text-[#F4F4F6] transition-colors duration-300">
         <HeroScrollytelling />
         <UrbanAgility />
         <TechnicalSpecs />
