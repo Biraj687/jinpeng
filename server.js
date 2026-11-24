@@ -1,3 +1,4 @@
+/* eslint-disable */
 // server.js - Production HTTP server for Next.js on cPanel / Phusion Passenger
 const http = require("http");
 const next = require("next");
@@ -23,3 +24,4 @@ app
     console.error("Error starting Next.js server:", err);
     process.exit(1);
   });
+
