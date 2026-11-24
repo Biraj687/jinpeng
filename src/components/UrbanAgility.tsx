@@ -12,29 +12,29 @@ export default function UrbanAgility() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl md:text-5xl font-semibold tracking-[-0.02em] text-[#F4F4F6] leading-[1.08]">
-              Engineered for Kathmandu’s living streets.
+              Built for Kathmandu Road Conditions.
             </h2>
           </div>
           <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#8E939E] max-w-md font-normal leading-relaxed">
-            Built for Nepal by Synergy Motors: high 175 mm ground clearance, up to 340 km electric range, and a practical 5-door cabin.
+            Every dimension is chosen for Nepal: 175 mm ground clearance to clear rough patches, responsive 35 kW motor for steep climbs, and a compact 5-door cabin that parks easily anywhere.
           </p>
         </div>
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Tile 1: 175mm Ground Clearance (7 Cols) */}
-          <div className="md:col-span-7 relative aspect-[16/11] bg-[#121316] border border-white/[0.08] overflow-hidden group flex flex-col justify-between p-6 sm:p-8">
+          <div className="md:col-span-7 relative aspect-[16/11] bg-gradient-to-b from-[#16181D] via-[#101115] to-[#0A0B0E] border border-white/[0.08] overflow-hidden group flex flex-col justify-between p-6 sm:p-8">
             <Image
-              src="/car/ezgif-frame-095.jpg"
+              src="/images/1.png"
               alt="Jinpeng Lingbox AT Front Fascia"
               fill
-              className="object-cover object-center transition-transform duration-700 group-hover:scale-105 opacity-85"
+              className="object-contain p-6 sm:p-8 transition-transform duration-700 group-hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 60vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C0E] via-[#0B0C0E]/30 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C0E] via-transparent to-transparent pointer-events-none" />
 
             <div className="relative z-10 flex items-center justify-between">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0B0C0E]/80 backdrop-blur-md border border-white/15 text-[10px] font-medium tracking-[0.16em] uppercase text-[#F4F4F6]">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0B0C0E]/85 backdrop-blur-md border border-white/15 text-[10px] font-medium tracking-[0.16em] uppercase text-[#F4F4F6]">
                 <Shield className="w-3 h-3 text-[#E8371B]" />
                 <span>OFFICIAL SPECIFICATION</span>
               </span>
@@ -50,7 +50,7 @@ export default function UrbanAgility() {
                 </span>
               </div>
               <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#F4F4F6]/90 max-w-md">
-                Clear tall speed breakers, unpaved colony roads, and severe monsoon transitions with confident underbody clearance.
+                175 mm unladen clearance protects the battery and chassis from tall speed breakers, rough colony roads, and monsoon potholes.
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function UrbanAgility() {
                 240 km Base · 340 km Top Variant
               </h3>
               <p className="font-[family-name:var(--font-dm-sans)] text-xs text-[#8E939E] leading-relaxed">
-                Ample range for daily multi-day Valley commutes and intercity travel with DC Fast Charging available on the Top Variant.
+                Reliable range for daily office commutes and highway trips, with DC fast charging supported on the Top Variant.
               </p>
             </div>
 
@@ -106,7 +106,7 @@ export default function UrbanAgility() {
                 </span>
               </div>
               <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#8E939E] leading-relaxed">
-                Instant throttle delivery across the powerband, providing smooth, quiet climbing authority on steep Valley inclines.
+                Instant electric motor response gives you quick pickup at traffic signals and smooth, effortless hill starts without engine noise or gear shift lag.
               </p>
             </div>
 
@@ -117,18 +117,18 @@ export default function UrbanAgility() {
           </div>
 
           {/* Tile 4: 5-Door / 4-Adult Cabin (6 Cols) */}
-          <div className="md:col-span-6 relative aspect-[16/10] bg-[#121316] border border-white/[0.08] overflow-hidden group flex flex-col justify-between p-6 sm:p-8">
+          <div className="md:col-span-6 relative aspect-[16/10] bg-gradient-to-b from-[#16181D] via-[#101115] to-[#0A0B0E] border border-white/[0.08] overflow-hidden group flex flex-col justify-between p-6 sm:p-8">
             <Image
-              src="/car/ezgif-frame-140.jpg"
-              alt="Jinpeng Lingbox AT Side Profile"
+              src="/images/6.png"
+              alt="Jinpeng Lingbox AT Rear Profile"
               fill
-              className="object-cover object-center transition-transform duration-700 group-hover:scale-105 opacity-80"
+              className="object-contain p-6 sm:p-8 transition-transform duration-700 group-hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C0E] via-[#0B0C0E]/40 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C0E] via-transparent to-transparent pointer-events-none" />
 
             <div className="relative z-10 flex items-center justify-between">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0B0C0E]/80 backdrop-blur-md border border-white/15 text-[10px] font-medium tracking-[0.16em] uppercase text-[#F4F4F6]">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0B0C0E]/85 backdrop-blur-md border border-white/15 text-[10px] font-medium tracking-[0.16em] uppercase text-[#F4F4F6]">
                 <Maximize2 className="w-3 h-3 text-white" />
                 <span>PRACTICALITY</span>
               </span>
@@ -144,7 +144,7 @@ export default function UrbanAgility() {
                 </span>
               </div>
               <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#F4F4F6]/90 max-w-sm">
-                Comfortable upright 4-passenger cabin geometry for everyday Kathmandu utility.
+                Comfortable seating for 4 adults with convenient 5-door access and practical rear cargo space for daily shopping and luggage.
               </p>
             </div>
           </div>

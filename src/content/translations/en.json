@@ -28,8 +28,8 @@
     "viewModelsCta": "View Variants & Pricing"
   },
   "urbanAgility": {
-    "heading": "Engineered for Kathmandu’s living streets.",
-    "description": "Built around the physical realities of the Valley: 175 mm elevated ground clearance, responsive 35 kW electric power, and practical 5-door geometry.",
+    "heading": "Built for Kathmandu Road Conditions.",
+    "description": "Every dimension is chosen for Nepal: 175 mm ground clearance to clear rough patches, responsive 35 kW motor for steep climbs, and a compact 5-door cabin that parks easily anywhere.",
     "clearanceTitle": "175 mm",
     "clearanceLabel": "Ground Clearance",
     "clearanceDesc": "Clear high speed humps, uneven brick pavers, and monsoon road transitions with zero underbody scraping.",
@@ -87,8 +87,8 @@
     }
   },
   "locations": {
-    "heading": "Showrooms & Contact.",
-    "description": "Visit the official Synergy Motors showroom in Balkumari, Lalitpur.",
+    "heading": "Visit the Showroom.",
+    "description": "Inspect the Jinpeng Lingbox AT in person at Balkumari, Lalitpur. Book a test drive, review financing plans, or consult with our showroom advisors.",
     "showroomName": "Synergy Motors — Jinpeng Nepal Showroom",
     "address": "Balkumari, Lalitpur",
     "hours": "Contact for showroom hours",
@@ -99,7 +99,7 @@
   },
   "booking": {
     "heading": "Book a test drive.",
-    "description": "Experience the Jinpeng Lingbox AT. Schedule a visit to our Balkumari, Lalitpur showroom or request a doorstep demonstration.",
+    "description": "Test drive the Lingbox AT on Kathmandu roads. Visit our Balkumari showroom or request a test drive at your preferred location.",
     "selectVariant": "Select Variant",
     "selectLocation": "Showroom / Demonstration",
     "fullName": "Full Name",

@@ -57,7 +57,7 @@ export default function InquiryBooking() {
               Book a test drive.
             </h2>
             <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#8E939E] font-normal leading-relaxed mb-8">
-              Experience the Jinpeng Lingbox AT. Visit our official showroom in Balkumari, Lalitpur, or request a doorstep vehicle demonstration.
+              Test drive the Lingbox AT on Kathmandu roads. Visit our Balkumari showroom or request a test drive at your preferred location.
             </p>
 
             <div className="space-y-4 border-t border-white/[0.08] pt-6 font-[family-name:var(--font-dm-sans)] text-xs text-[#8E939E]">

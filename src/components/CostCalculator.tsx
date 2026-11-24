@@ -33,7 +33,7 @@ export default function CostCalculator() {
             </h2>
           </div>
           <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#8E939E] max-w-md font-normal leading-relaxed">
-            Illustrative estimate comparing daily commute energy costs on domestic electricity against conventional petrol fuel.
+            Estimate your monthly and annual fuel savings when switching from petrol to electric in Kathmandu.
           </p>
         </div>
 

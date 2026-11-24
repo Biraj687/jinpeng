@@ -73,16 +73,15 @@ export default function ModelTrims() {
               )}
 
               {/* Vehicle Thumbnail */}
-              <div className="relative aspect-[16/10] bg-[#0B0C0E] overflow-hidden border-b border-white/[0.06]">
+              <div className="relative aspect-[16/10] bg-gradient-to-b from-[#16181D] via-[#101115] to-[#0A0B0E] overflow-hidden border-b border-white/[0.08] flex items-center justify-center">
                 <Image
                   src={v.image}
                   alt={v.fullName}
                   fill
-                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105 opacity-85"
+                  className="object-contain p-6 sm:p-8 transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0F1013] via-transparent to-transparent" />
-                <div className="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-[#0B0C0E]/80 backdrop-blur-md border border-white/10 text-[11px] font-semibold tracking-wider text-white">
+                <div className="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-[#0B0C0E]/85 backdrop-blur-md border border-white/15 text-[11px] font-semibold tracking-wider text-white">
                   {v.rangeFormatted}
                 </div>
               </div>

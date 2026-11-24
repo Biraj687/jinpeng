@@ -80,7 +80,7 @@
       "groundClearanceMm": 175,
       "groundClearanceFormatted": "175 mm Ground Clearance",
       "dcFastCharging": false,
-      "image": "/car/ezgif-frame-060.jpg",
+      "image": "/images/2.png",
       "highlights": [
         "240 km Range",
         "35 kW Electric Motor",
@@ -103,7 +103,7 @@
       "groundClearanceFormatted": "175 mm Ground Clearance",
       "dcFastCharging": true,
       "dcFastChargingFormatted": "DC Fast Charging",
-      "image": "/car/ezgif-frame-160.jpg",
+      "image": "/images/7.png",
       "highlights": [
         "340 km Range",
         "DC Fast Charging",

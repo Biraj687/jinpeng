@@ -88,15 +88,15 @@ export default function TechnicalSpecs() {
           </div>
 
           {/* Side Visual Card (4 cols) */}
-          <div className="lg:col-span-4 relative aspect-[4/5] lg:aspect-auto bg-[#121316] border border-white/[0.08] overflow-hidden flex flex-col justify-between p-6 sm:p-8">
+          <div className="lg:col-span-4 relative aspect-[4/5] lg:aspect-auto bg-gradient-to-b from-[#16181D] via-[#101115] to-[#0A0B0E] border border-white/[0.08] overflow-hidden flex flex-col justify-between p-6 sm:p-8">
             <Image
-              src="/car/ezgif-frame-205.jpg"
+              src="/images/7.png"
               alt="Jinpeng Lingbox AT Stance"
               fill
-              className="object-cover opacity-70"
+              className="object-contain p-6 opacity-90 transition-transform duration-700 hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 35vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C0E] via-[#0B0C0E]/50 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C0E] via-transparent to-transparent pointer-events-none" />
 
             <div className="relative z-10">
               <span className="font-[family-name:var(--font-dm-sans)] text-[10px] tracking-[0.2em] uppercase text-[#8E939E]">
