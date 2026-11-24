@@ -23,25 +23,16 @@ export default function UrbanAgility() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
           {/* Tile 1: 175mm Ground Clearance (7 Cols) */}
-          <div className="md:col-span-7 relative aspect-[4/3] sm:aspect-[16/11] bg-gradient-to-b from-white via-[#F3F4F6] to-[#E9ECEF] dark:from-[#16181D] dark:via-[#101115] dark:to-[#0A0B0E] border border-black/[0.08] dark:border-white/[0.08] overflow-hidden group flex flex-col justify-between p-5 sm:p-8 transition-all">
-            <Image
-              src="/images/1.png"
-              alt="Jinpeng Lingbox AT Front Fascia"
-              fill
-              className="object-contain p-4 sm:p-8 transition-transform duration-700 group-hover:scale-105"
-              sizes="(max-width: 1024px) 100vw, 60vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-white/70 dark:from-[#0B0C0E] via-transparent to-transparent pointer-events-none" />
+          <div className="md:col-span-7 border border-black/[0.08] dark:border-white/[0.08] bg-white dark:bg-[#0F1013] p-5 sm:p-8 flex flex-col justify-between hover:border-black/20 dark:hover:border-white/20 transition-all group overflow-hidden relative">
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/[0.04] dark:bg-white/[0.05] border border-black/10 dark:border-white/10 text-[10px] font-medium tracking-[0.16em] uppercase text-[#5E636E] dark:text-[#8E939E]">
+                  <Shield className="w-3 h-3 text-[#E8371B]" />
+                  <span>OFFICIAL SPECIFICATION</span>
+                </span>
+              </div>
 
-            <div className="relative z-10 flex items-center justify-between">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/85 dark:bg-[#0B0C0E]/85 backdrop-blur-md border border-black/10 dark:border-white/15 text-[10px] font-medium tracking-[0.16em] uppercase text-[#111215] dark:text-[#F4F4F6]">
-                <Shield className="w-3 h-3 text-[#E8371B]" />
-                <span>OFFICIAL SPECIFICATION</span>
-              </span>
-            </div>
-
-            <div className="relative z-10">
-              <div className="flex items-baseline gap-2.5 sm:gap-3 mb-1">
+              <div className="flex items-baseline gap-2.5 sm:gap-3 mb-2">
                 <span className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-5xl font-bold text-[#111215] dark:text-[#F4F4F6]">
                   175 mm
                 </span>
@@ -49,9 +40,25 @@ export default function UrbanAgility() {
                   GROUND CLEARANCE
                 </span>
               </div>
-              <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#111215]/90 dark:text-[#F4F4F6]/90 max-w-md">
+              <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#5E636E] dark:text-[#8E939E] max-w-md leading-relaxed">
                 175 mm unladen clearance protects the battery and chassis from tall speed breakers, rough colony roads, and monsoon potholes.
               </p>
+            </div>
+
+            {/* Dedicated Car Visual Stage - completely separated from typography */}
+            <div className="relative w-full h-[180px] sm:h-[220px] md:h-[240px] my-4 flex items-center justify-center">
+              <Image
+                src="/images/1.png"
+                alt="Jinpeng Lingbox AT Front Fascia"
+                fill
+                className="object-contain object-bottom transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 60vw"
+              />
+            </div>
+
+            <div className="pt-4 border-t border-black/[0.06] dark:border-white/[0.06] flex items-center justify-between text-[11px] font-[family-name:var(--font-dm-sans)]">
+              <span className="text-[#5E636E] dark:text-[#8E939E]">Chassis Stance</span>
+              <span className="text-[#111215] dark:text-[#F4F4F6] font-medium">175 mm Unladen Clearance</span>
             </div>
           </div>
 
@@ -117,35 +124,42 @@ export default function UrbanAgility() {
           </div>
 
           {/* Tile 4: 5-Door / 4-Adult Cabin (6 Cols) */}
-          <div className="md:col-span-6 relative aspect-[4/3] sm:aspect-[16/10] bg-gradient-to-b from-white via-[#F3F4F6] to-[#E9ECEF] dark:from-[#16181D] dark:via-[#101115] dark:to-[#0A0B0E] border border-black/[0.08] dark:border-white/[0.08] overflow-hidden group flex flex-col justify-between p-5 sm:p-8 transition-all">
-            <Image
-              src="/images/6.png"
-              alt="Jinpeng Lingbox AT Rear Profile"
-              fill
-              className="object-contain p-4 sm:p-8 transition-transform duration-700 group-hover:scale-105"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-white/70 dark:from-[#0B0C0E] via-transparent to-transparent pointer-events-none" />
+          <div className="md:col-span-6 border border-black/[0.08] dark:border-white/[0.08] bg-white dark:bg-[#0F1013] p-5 sm:p-8 flex flex-col justify-between hover:border-black/20 dark:hover:border-white/20 transition-all group overflow-hidden relative">
+            <div>
+              <div className="flex items-center justify-between mb-4">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/[0.04] dark:bg-white/[0.05] border border-black/10 dark:border-white/10 text-[10px] font-medium tracking-[0.16em] uppercase text-[#5E636E] dark:text-[#8E939E]">
+                  <Maximize2 className="w-3 h-3 text-[#E8371B] dark:text-white" />
+                  <span>PRACTICALITY</span>
+                </span>
+              </div>
 
-            <div className="relative z-10 flex items-center justify-between">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/85 dark:bg-[#0B0C0E]/85 backdrop-blur-md border border-black/10 dark:border-white/15 text-[10px] font-medium tracking-[0.16em] uppercase text-[#111215] dark:text-[#F4F4F6]">
-                <Maximize2 className="w-3 h-3 text-[#E8371B] dark:text-white" />
-                <span>PRACTICALITY</span>
-              </span>
-            </div>
-
-            <div className="relative z-10">
-              <div className="flex items-baseline gap-2.5 sm:gap-3 mb-1">
-                <span className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-4xl font-bold text-[#111215] dark:text-[#F4F4F6]">
+              <div className="flex items-baseline gap-2.5 sm:gap-3 mb-2">
+                <span className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-5xl font-bold text-[#111215] dark:text-[#F4F4F6]">
                   5 Doors
                 </span>
                 <span className="font-[family-name:var(--font-dm-sans)] text-[10px] sm:text-xs font-semibold tracking-[0.18em] uppercase text-[#5E636E] dark:text-[#8E939E]">
                   4 ADULTS
                 </span>
               </div>
-              <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#111215]/90 dark:text-[#F4F4F6]/90 max-w-sm">
+              <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#5E636E] dark:text-[#8E939E] max-w-sm leading-relaxed">
                 Comfortable seating for 4 adults with convenient 5-door access and practical rear cargo space for daily shopping and luggage.
               </p>
+            </div>
+
+            {/* Dedicated Car Visual Stage - completely separated from typography */}
+            <div className="relative w-full h-[180px] sm:h-[220px] md:h-[240px] my-4 flex items-center justify-center">
+              <Image
+                src="/images/6.png"
+                alt="Jinpeng Lingbox AT Rear Profile"
+                fill
+                className="object-contain object-bottom transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+
+            <div className="pt-4 border-t border-black/[0.06] dark:border-white/[0.06] flex items-center justify-between text-[11px] font-[family-name:var(--font-dm-sans)]">
+              <span className="text-[#5E636E] dark:text-[#8E939E]">Cabin Layout</span>
+              <span className="text-[#111215] dark:text-[#F4F4F6] font-medium">5-Door Hatchback · 4-Seater</span>
             </div>
           </div>
         </div>

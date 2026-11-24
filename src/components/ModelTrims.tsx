@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 import carData from "@/content/car.json";
-import { ArrowUpRight, ArrowLeftRight } from "lucide-react";
+import { ArrowUpRight, ArrowLeftRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 type VariantId = "top" | "base";
 type FinishColor = "mint" | "white";
@@ -147,12 +147,14 @@ export default function ModelTrims() {
             <button
               type="button"
               onClick={toggleVariant}
-              className="group flex flex-col items-center gap-2 p-2 hover:opacity-90 transition-opacity cursor-pointer select-none"
-              title="Switch Variant"
-              aria-label="Switch Variant"
+              className="group flex flex-col items-center gap-2.5 py-4 px-2 rounded-xl bg-[#0b0b0b] border border-white/10 hover:border-[#d4202c]/50 hover:bg-[#1a1a1a] transition-all cursor-pointer select-none"
+              title="Click to Switch Variant"
+              aria-label="Click to Switch Variant"
             >
-              <span className="w-1 h-8 bg-[#d4202c] rounded-full transition-transform duration-300 group-hover:scale-y-125" />
-              <span className="[writing-mode:vertical-rl] rotate-180 text-[9px] tracking-[0.2em] uppercase font-semibold text-[#bcbec0] group-hover:text-[#ecebe7] transition-colors py-1">
+              <div className="w-7 h-7 rounded-full bg-[#d4202c]/15 border border-[#d4202c]/30 flex items-center justify-center">
+                <ArrowLeftRight className="w-3.5 h-3.5 text-[#d4202c] transition-transform duration-300 group-hover:rotate-180" />
+              </div>
+              <span className="[writing-mode:vertical-rl] rotate-180 text-[10px] tracking-[0.2em] uppercase font-bold text-[#ecebe7] group-hover:text-[#d4202c] transition-colors py-1">
                 Switch Variant
               </span>
             </button>
@@ -223,6 +225,27 @@ export default function ModelTrims() {
 
             {/* Center Stage: Car Cutout with Cross-Slide Animation */}
             <div className="relative my-6 sm:my-8 h-[240px] sm:h-[320px] md:h-[380px] w-full flex items-center justify-center select-none overflow-hidden">
+              {/* Prev / Next Slider Arrows for Direct Variant Toggling */}
+              <button
+                type="button"
+                onClick={toggleVariant}
+                className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-8 sm:w-10 h-8 sm:h-10 rounded-full bg-[#161616]/80 hover:bg-[#222222] border border-white/15 hover:border-white/40 text-[#ecebe7] flex items-center justify-center transition-all cursor-pointer shadow-lg backdrop-blur-sm group"
+                title={`Switch to ${activeVariant === "top" ? "Base" : "Top"} Variant`}
+                aria-label="Previous Variant"
+              >
+                <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-[#bcbec0] group-hover:text-white transition-colors" />
+              </button>
+
+              <button
+                type="button"
+                onClick={toggleVariant}
+                className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-8 sm:w-10 h-8 sm:h-10 rounded-full bg-[#161616]/80 hover:bg-[#222222] border border-white/15 hover:border-white/40 text-[#ecebe7] flex items-center justify-center transition-all cursor-pointer shadow-lg backdrop-blur-sm group"
+                title={`Switch to ${activeVariant === "top" ? "Base" : "Top"} Variant`}
+                aria-label="Next Variant"
+              >
+                <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-[#bcbec0] group-hover:text-white transition-colors" />
+              </button>
+
               <div
                 key={`${activeVariant}-${activeFinish}`}
                 className={`relative w-full h-full flex items-center justify-center ${animationClass}`}
@@ -232,6 +255,7 @@ export default function ModelTrims() {
                   alt={`${currentVariant.fullName} in ${activeFinish === "mint" ? "Mint Green" : "Studio White"}`}
                   fill
                   priority
+                  sizes="(max-width: 1024px) 100vw, 60vw"
                   className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.8)]"
                 />
               </div>
@@ -241,7 +265,7 @@ export default function ModelTrims() {
             </div>
 
             {/* Stage Bottom Bar */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 z-10 pt-2 border-t border-white/10">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 z-10 pt-3 border-t border-white/10">
               <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
                 <span className="px-3.5 py-1.5 rounded-full bg-[#161616] border border-white/10 text-[11px] font-semibold tracking-wider uppercase text-[#ecebe7]">
                   {currentVariant.rangeFormatted}
@@ -252,16 +276,33 @@ export default function ModelTrims() {
                     <span>DC Fast Charging</span>
                   </span>
                 )}
+                <span className="px-3.5 py-1.5 rounded-full bg-[#161616] border border-white/10 text-[11px] font-semibold tracking-wider uppercase text-[#8d8d89] hidden md:inline-block">
+                  175 mm Clearance
+                </span>
               </div>
 
-              <button
-                type="button"
-                onClick={() => handleBookVariant(activeVariant)}
-                className="px-5 py-2.5 rounded-full bg-[#ecebe7] text-[#0b0b0b] text-xs font-bold tracking-[0.16em] uppercase hover:bg-white transition-colors duration-200 flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <span>Book {activeVariant === "top" ? "Top Variant" : "Base Variant"}</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </button>
+              {/* Action Buttons: Prominent Switch Variant + Book CTA */}
+              <div className="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
+                <button
+                  type="button"
+                  onClick={toggleVariant}
+                  className="flex-1 sm:flex-initial px-4 py-2.5 rounded-full bg-[#1a1a1a] hover:bg-[#252525] border border-white/20 hover:border-[#d4202c]/60 text-[#ecebe7] text-xs font-semibold tracking-[0.12em] uppercase transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-md group"
+                  title="Click to Switch Variant"
+                  aria-label="Switch Variant"
+                >
+                  <ArrowLeftRight className="w-3.5 h-3.5 text-[#d4202c] transition-transform duration-300 group-hover:rotate-180" />
+                  <span>Switch to {activeVariant === "top" ? "Base Variant" : "Top Variant"}</span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => handleBookVariant(activeVariant)}
+                  className="flex-1 sm:flex-initial px-5 py-2.5 rounded-full bg-[#ecebe7] text-[#0b0b0b] text-xs font-bold tracking-[0.14em] uppercase hover:bg-white transition-colors duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                >
+                  <span>Book {activeVariant === "top" ? "Top Variant" : "Base Variant"}</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
             </div>
           </div>
 
@@ -360,14 +401,24 @@ export default function ModelTrims() {
             <button
               type="button"
               onClick={toggleVariant}
-              className="w-full py-3.5 rounded-full bg-[#0b0b0b] border border-white/10 hover:border-white/20 text-[#ecebe7] text-[11px] font-semibold tracking-[0.12em] uppercase transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer group"
+              className="w-full py-3 px-4 rounded-[16px] bg-[#1a1a1a] hover:bg-[#222222] border border-white/15 hover:border-[#d4202c]/50 text-[#ecebe7] transition-all duration-200 flex items-center justify-between cursor-pointer group shadow-md"
             >
-              <span>
-                {activeVariant === "top"
-                  ? "Compare Other Variant — Switch to Base Variant · NPR 23,49,000"
-                  : "Switch to Top Variant (Premium) · NPR 25,99,000"}
-              </span>
-              <ArrowLeftRight className="w-3.5 h-3.5 text-[#d4202c] transition-transform duration-300 group-hover:rotate-180" />
+              <div className="flex items-center gap-3 text-left">
+                <div className="w-8 h-8 rounded-full bg-[#d4202c]/20 border border-[#d4202c]/40 flex items-center justify-center shrink-0">
+                  <ArrowLeftRight className="w-4 h-4 text-[#d4202c] transition-transform duration-300 group-hover:rotate-180" />
+                </div>
+                <div>
+                  <span className="text-[10px] text-[#8d8d89] uppercase tracking-[0.16em] block font-semibold">
+                    Compare Alternative
+                  </span>
+                  <span className="text-xs font-bold text-[#ecebe7] block mt-0.5">
+                    Switch to {activeVariant === "top" ? "Base Variant · NPR 23,49,000" : "Top Variant (Premium) · NPR 25,99,000"}
+                  </span>
+                </div>
+              </div>
+              <div className="text-[#d4202c] font-bold text-sm shrink-0 pl-2 group-hover:translate-x-1 transition-transform">
+                ⇄
+              </div>
             </button>
           </div>
         </div>
