@@ -18,9 +18,55 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jinpengnepal.com"),
   title: "Jinpeng Lingbox AT | Synergy Motors Nepal",
   description:
     "Jinpeng Lingbox EV — Brought to you by Synergy Motors. 175 mm ground clearance, up to 340 km range, and 35 kW electric motor. Open for booking in Balkumari, Lalitpur.",
+  keywords: [
+    "Jinpeng Nepal",
+    "Jinpeng Lingbox",
+    "Lingbox AT",
+    "Lingbox EV",
+    "Synergy Motors",
+    "Electric Car Nepal",
+    "Kathmandu EV",
+    "Jinpeng Price Nepal",
+  ],
+  authors: [{ name: "Synergy Motors" }],
+  creator: "Synergy Motors Nepal",
+  publisher: "Synergy Motors",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
+  openGraph: {
+    title: "Jinpeng Lingbox AT | Synergy Motors Nepal",
+    description:
+      "Jinpeng Lingbox EV — Brought to you by Synergy Motors. 175 mm ground clearance, up to 340 km range, and 35 kW electric motor. Open for booking in Balkumari, Lalitpur.",
+    url: "https://jinpengnepal.com",
+    siteName: "Jinpeng Nepal",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/7.png",
+        width: 1200,
+        height: 630,
+        alt: "Jinpeng Lingbox AT — Synergy Motors",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jinpeng Lingbox AT | Synergy Motors Nepal",
+    description:
+      "Jinpeng Lingbox EV — Brought to you by Synergy Motors. 175 mm ground clearance, up to 340 km range, and 35 kW electric motor.",
+    images: ["/images/7.png"],
+  },
 };
 
 export default function RootLayout({
