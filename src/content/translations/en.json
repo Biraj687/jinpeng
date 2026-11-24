@@ -62,7 +62,8 @@
     "fiveYearSavingsLabel": "5-Year Total Estimated Savings"
   },
   "trims": {
-    "heading": "Official Variants & Pricing in Nepal.",
+    "heading": "Models & Pricing.",
+    "eyebrow": "Synergy Motors · Nepal",
     "description": "Brought to you by Synergy Motors. Open for Booking with easy EMI starting from NPR 20,500/month.",
     "bookingStatus": "Open for Booking",
     "easyEmi": "Easy EMI Available",
@@ -74,7 +75,9 @@
       "price": "NPR 23,49,000",
       "range": "240 km Range",
       "motor": "35 kW Electric Motor",
-      "clearance": "175 mm Ground Clearance"
+      "clearance": "175 mm Ground Clearance",
+      "headline": "Everyday Urban Electric",
+      "description": "Optimized for daily Kathmandu urban commuting with agile compact dimensions and 175 mm ground clearance."
     },
     "top": {
       "name": "Top Variant (Premium)",
@@ -83,7 +86,9 @@
       "range": "340 km Range",
       "fastCharge": "DC Fast Charging",
       "motor": "35 kW Electric Motor",
-      "clearance": "175 mm Ground Clearance"
+      "clearance": "175 mm Ground Clearance",
+      "headline": "Extended Range & Fast Charge",
+      "description": "Engineered for longer valley transitions and rapid turnarounds with public DC fast charging."
     }
   },
   "locations": {

@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { ArrowUpRight, CheckCircle2, Phone, MapPin } from "lucide-react";
 
 export default function InquiryBooking() {
-  const [selectedTrim, setSelectedTrim] = useState<string>("Base Variant (240 km)");
+  const [selectedTrim, setSelectedTrim] = useState<string>("Top Variant (340 km)");
   const [selectedLocation, setSelectedLocation] = useState<string>("Balkumari, Lalitpur Showroom");
   const [formData, setFormData] = useState({
     name: "",
@@ -15,6 +15,17 @@ export default function InquiryBooking() {
 
   const [submitted, setSubmitted] = useState(false);
   const [bookingRef, setBookingRef] = useState("");
+
+  useEffect(() => {
+    const handleVariantSelect = (e: Event) => {
+      const customEvent = e as CustomEvent<{ trim: string }>;
+      if (customEvent.detail?.trim) {
+        setSelectedTrim(customEvent.detail.trim);
+      }
+    };
+    window.addEventListener("jinpeng-select-variant", handleVariantSelect);
+    return () => window.removeEventListener("jinpeng-select-variant", handleVariantSelect);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
