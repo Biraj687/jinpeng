@@ -298,6 +298,11 @@ export default function HeroScrollytelling() {
           className="absolute inset-0 w-full h-full block"
         />
 
+        {/* Ambient Scrim Overlay for Cinematic Typography Contrast */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0B0C0E]/80 via-transparent to-[#0B0C0E]/50 pointer-events-none" />
+        <div className="absolute inset-y-0 left-0 w-full md:w-1/2 bg-gradient-to-r from-[#0B0C0E]/50 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-full md:w-1/2 bg-gradient-to-l from-[#0B0C0E]/50 via-transparent to-transparent pointer-events-none" />
+
         {!firstFrameLoaded && (
           <div className="absolute inset-0 bg-[#0B0C0E] flex items-center justify-center pointer-events-none">
             <span className="font-[family-name:var(--font-dm-sans)] text-[10px] tracking-[0.3em] uppercase text-[#8E939E]/60 animate-pulse">
@@ -335,21 +340,38 @@ export default function HeroScrollytelling() {
             {/* 25% - 55% (Reveal 1): Product Statement */}
             <div
               ref={reveal1Ref}
-              className="absolute left-0 md:left-2 lg:left-6 top-[28%] md:top-1/2 -translate-y-1/2 max-w-md opacity-0 pointer-events-auto"
+              className="absolute left-0 md:left-2 lg:left-6 top-[28%] md:top-1/2 -translate-y-1/2 max-w-lg opacity-0 pointer-events-auto"
             >
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl md:text-5xl font-semibold tracking-[-0.02em] text-[#F4F4F6] leading-tight mb-3">
-                Lingbox AT
-              </h2>
-              <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm md:text-[15px] font-normal text-[#8E939E] leading-relaxed max-w-sm mb-6">
-                Brought to you by Synergy Motors. Engineered for Nepal with 175 mm ground clearance and up to 340 km range.
-              </p>
-              <a
-                href="#vehicle"
-                className="group inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/20 bg-white/[0.04] backdrop-blur-md text-[11px] font-medium tracking-[0.18em] uppercase text-[#F4F4F6] hover:bg-white hover:text-[#0B0C0E] hover:border-white transition-all duration-300"
-              >
-                <span>EXPLORE VEHICLE</span>
-                <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
+              <div className="p-6 sm:p-8 rounded-[24px] bg-[#0B0C0E]/70 backdrop-blur-md border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+                {/* Eyebrow badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#161616]/90 border border-white/15 mb-3.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4202c] animate-pulse" />
+                  <span className="font-[family-name:var(--font-dm-sans)] text-[10px] font-semibold tracking-[0.2em] uppercase text-[#ECEBE7]">
+                    Synergy Motors · Nepal
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h2 className="font-[family-name:var(--font-space-grotesk)] text-3xl sm:text-4xl md:text-5xl font-bold tracking-[-0.03em] text-[#F4F4F6] leading-[1.08] mb-3">
+                  Lingbox AT
+                </h2>
+
+                {/* High-contrast, clean body */}
+                <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm md:text-[15px] font-normal text-[#ECEBE7]/90 leading-relaxed max-w-sm mb-6">
+                  Brought to you by Synergy Motors. Engineered for Nepal with 175 mm ground clearance and up to 340 km range.
+                </p>
+
+                {/* Primary Solid Action Button */}
+                <div>
+                  <a
+                    href="#vehicle"
+                    className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#ECEBE7] text-[#0B0C0E] hover:bg-white text-xs font-bold tracking-[0.16em] uppercase shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
+                  >
+                    <span>EXPLORE VEHICLE</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </div>
+              </div>
             </div>
 
             {/* 60% - 90% (Reveal 2): Direct Electric Drive */}
@@ -357,32 +379,64 @@ export default function HeroScrollytelling() {
               ref={reveal2Ref}
               className="absolute right-0 md:right-2 lg:right-6 top-[28%] md:top-1/2 -translate-y-1/2 max-w-lg text-left md:text-right opacity-0 pointer-events-auto"
             >
-              <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl md:text-5xl font-semibold tracking-[-0.02em] text-[#F4F4F6] leading-tight mb-6">
-                Instant electric torque.
-              </h2>
+              <div className="p-6 sm:p-8 rounded-[24px] bg-[#0B0C0E]/70 backdrop-blur-md border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col md:items-end">
+                {/* Eyebrow badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#161616]/90 border border-white/15 mb-3.5 self-start md:self-end">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#d4202c] animate-pulse" />
+                  <span className="font-[family-name:var(--font-dm-sans)] text-[10px] font-semibold tracking-[0.2em] uppercase text-[#ECEBE7]">
+                    Electric Powertrain
+                  </span>
+                </div>
 
-              <div className="inline-flex items-center border border-white/12 py-2 px-3 sm:px-4 bg-[#0B0C0E]/75 backdrop-blur-md rounded-full mb-6">
-                <span className="font-[family-name:var(--font-dm-sans)] text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-[#F4F4F6] px-2.5 sm:px-3">
-                  175 MM CLEARANCE
-                </span>
-                <span className="w-px h-3.5 bg-white/12" />
-                <span className="font-[family-name:var(--font-dm-sans)] text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-[#F4F4F6] px-2.5 sm:px-3">
-                  UP TO 340 KM
-                </span>
-                <span className="w-px h-3.5 bg-white/12" />
-                <span className="font-[family-name:var(--font-dm-sans)] text-[10px] sm:text-[11px] font-medium tracking-[0.18em] uppercase text-[#F4F4F6] px-2.5 sm:px-3">
-                  35 KW MOTOR
-                </span>
-              </div>
+                {/* Headline in title case, bold display */}
+                <h2 className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl md:text-5xl font-bold tracking-[-0.03em] text-[#F4F4F6] leading-[1.08] mb-3">
+                  Instant Electric Torque.
+                </h2>
 
-              <div>
-                <a
-                  href="#models"
-                  className="group inline-flex items-center gap-2 px-5 py-2 rounded-full border border-white/20 bg-white/[0.04] backdrop-blur-md text-[11px] font-medium tracking-[0.18em] uppercase text-[#F4F4F6] hover:bg-white hover:text-[#0B0C0E] hover:border-white transition-all duration-300"
-                >
-                  <span>VIEW VARIANTS & PRICING</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </a>
+                <p className="font-[family-name:var(--font-dm-sans)] text-xs sm:text-sm text-[#ECEBE7]/80 leading-relaxed max-w-sm mb-5 self-start md:self-end">
+                  Responsive 35 kW motor for smooth traffic pickup and effortless hill starts across Kathmandu.
+                </p>
+
+                {/* Spec Pill Bar with bold numerical typography */}
+                <div className="inline-flex items-center border border-white/15 py-2 px-3 sm:px-4 bg-[#161616]/90 rounded-full mb-6 self-start md:self-end">
+                  <div className="px-2 sm:px-3 text-center">
+                    <span className="font-[family-name:var(--font-space-grotesk)] text-xs sm:text-sm font-bold text-[#F4F4F6]">
+                      175 mm
+                    </span>
+                    <span className="font-[family-name:var(--font-dm-sans)] text-[9px] font-medium tracking-[0.14em] uppercase text-[#8E939E] ml-1.5 hidden sm:inline">
+                      Clearance
+                    </span>
+                  </div>
+                  <span className="w-px h-3.5 bg-white/15" />
+                  <div className="px-2 sm:px-3 text-center">
+                    <span className="font-[family-name:var(--font-space-grotesk)] text-xs sm:text-sm font-bold text-[#F4F4F6]">
+                      340 km
+                    </span>
+                    <span className="font-[family-name:var(--font-dm-sans)] text-[9px] font-medium tracking-[0.14em] uppercase text-[#8E939E] ml-1.5 hidden sm:inline">
+                      Max Range
+                    </span>
+                  </div>
+                  <span className="w-px h-3.5 bg-white/15" />
+                  <div className="px-2 sm:px-3 text-center">
+                    <span className="font-[family-name:var(--font-space-grotesk)] text-xs sm:text-sm font-bold text-[#F4F4F6]">
+                      35 kW
+                    </span>
+                    <span className="font-[family-name:var(--font-dm-sans)] text-[9px] font-medium tracking-[0.14em] uppercase text-[#8E939E] ml-1.5 hidden sm:inline">
+                      Motor
+                    </span>
+                  </div>
+                </div>
+
+                {/* Primary Solid Action Button */}
+                <div className="self-start md:self-end">
+                  <a
+                    href="#models"
+                    className="group inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#ECEBE7] text-[#0B0C0E] hover:bg-white text-xs font-bold tracking-[0.16em] uppercase shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
+                  >
+                    <span>VIEW VARIANTS & PRICING</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
