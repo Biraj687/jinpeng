@@ -1,0 +1,118 @@
+{
+  "brand": {
+    "name": "Jinpeng",
+    "distributor": "Synergy Motors",
+    "distributorCredit": "Jinpeng Lingbox EV — Brought to you by Synergy Motors",
+    "modelName": "Jinpeng Lingbox AT"
+  },
+  "nav": {
+    "vehicle": "Vehicle",
+    "specs": "Specs",
+    "savings": "Savings",
+    "models": "Models",
+    "showrooms": "Showrooms",
+    "testDrive": "Test Drive",
+    "bookTestDrive": "Book Test Drive"
+  },
+  "hero": {
+    "locationTag": "Kathmandu · Nepal",
+    "title": "Lingbox EV",
+    "subhead": "Built for Kathmandu’s narrowest streets and steepest climbs.",
+    "revealTorque": "Instant electric torque.",
+    "badges": {
+      "electric": "100% Electric",
+      "clearance": "175 mm Clearance",
+      "range": "Up to 340 km Range"
+    },
+    "exploreCta": "Explore Vehicle",
+    "viewModelsCta": "View Variants & Pricing"
+  },
+  "urbanAgility": {
+    "heading": "Engineered for Kathmandu’s living streets.",
+    "description": "Built around the physical realities of the Valley: 175 mm elevated ground clearance, responsive 35 kW electric power, and practical 5-door geometry.",
+    "clearanceTitle": "175 mm",
+    "clearanceLabel": "Ground Clearance",
+    "clearanceDesc": "Clear high speed humps, uneven brick pavers, and monsoon road transitions with zero underbody scraping.",
+    "rangeTitle": "Up to 340 km",
+    "rangeLabel": "Electric Range",
+    "rangeDesc": "240 km on Base Variant, up to 340 km on Top (Premium) Variant.",
+    "motorTitle": "35 kW",
+    "motorLabel": "Electric Motor",
+    "motorDesc": "Instant electric drive engineered for steep Valley ascents.",
+    "cabinTitle": "5 Doors",
+    "cabinLabel": "4 Adults",
+    "cabinDesc": "Comfortable upright 4-passenger cabin geometry for everyday Kathmandu utility."
+  },
+  "specs": {
+    "noticePill": "Official Specifications",
+    "heading": "Verified Specifications.",
+    "description": "Official performance metrics verified by Jinpeng × Synergy Motors posters.",
+    "dials": {
+      "range": "Up to 340 km",
+      "clearance": "175 mm",
+      "motor": "35 kW",
+      "fastCharge": "DC Fast"
+    }
+  },
+  "calculator": {
+    "heading": "Compare Daily Running Costs.",
+    "disclaimer": "Illustrative estimate based on user-adjustable commute distance and current domestic tariffs.",
+    "sliderLabel": "Daily Commute Distance:",
+    "annualSavingsLabel": "Estimated Annual Fuel Savings",
+    "fiveYearSavingsLabel": "5-Year Total Estimated Savings"
+  },
+  "trims": {
+    "heading": "Official Variants & Pricing in Nepal.",
+    "description": "Brought to you by Synergy Motors. Open for Booking with easy EMI starting from NPR 20,500/month.",
+    "bookingStatus": "Open for Booking",
+    "easyEmi": "Easy EMI Available",
+    "emiStarting": "Monthly EMI starting from NPR 20,500",
+    "priceLabel": "Showroom Price · Nepal",
+    "base": {
+      "name": "Base Variant",
+      "fullName": "Jinpeng Lingbox AT — Base Variant",
+      "price": "NPR 23,49,000",
+      "range": "240 km Range",
+      "motor": "35 kW Electric Motor",
+      "clearance": "175 mm Ground Clearance"
+    },
+    "top": {
+      "name": "Top Variant (Premium)",
+      "fullName": "Jinpeng Lingbox AT — Top Variant (Premium)",
+      "price": "NPR 25,99,000",
+      "range": "340 km Range",
+      "fastCharge": "DC Fast Charging",
+      "motor": "35 kW Electric Motor",
+      "clearance": "175 mm Ground Clearance"
+    }
+  },
+  "locations": {
+    "heading": "Showrooms & Contact.",
+    "description": "Visit the official Synergy Motors showroom in Balkumari, Lalitpur.",
+    "showroomName": "Synergy Motors — Jinpeng Nepal Showroom",
+    "address": "Balkumari, Lalitpur",
+    "hours": "Contact for showroom hours",
+    "phones": [
+      "+977 9714574057",
+      "+977 9849130768"
+    ]
+  },
+  "booking": {
+    "heading": "Book a test drive.",
+    "description": "Experience the Jinpeng Lingbox AT. Schedule a visit to our Balkumari, Lalitpur showroom or request a doorstep demonstration.",
+    "selectVariant": "Select Variant",
+    "selectLocation": "Showroom / Demonstration",
+    "fullName": "Full Name",
+    "mobileNumber": "Mobile Number",
+    "submit": "Confirm Test Drive Booking",
+    "successHeading": "Test Drive Reserved",
+    "callNotice": "Our test drive team from Synergy Motors will contact you to confirm your schedule."
+  },
+  "footer": {
+    "credit": "Jinpeng Lingbox EV — Brought to you by Synergy Motors",
+    "address": "Balkumari, Lalitpur, Nepal",
+    "phones": "+977 9714574057 / +977 9849130768",
+    "hours": "Contact for showroom hours",
+    "copyright": "© 2026 Jinpeng Nepal × Synergy Motors. All Rights Reserved."
+  }
+}

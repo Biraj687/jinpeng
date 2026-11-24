@@ -1,0 +1,128 @@
+{
+  "brand": "Jinpeng",
+  "distributor": "Synergy Motors",
+  "vehicleName": "Jinpeng Lingbox AT",
+  "modelFamily": "Lingbox AT",
+  "tagline": "Jinpeng Lingbox EV — Brought to you by Synergy Motors",
+  "bookingStatus": "Open for Booking",
+  "financing": {
+    "easyEmiAvailable": true,
+    "emiStartingNpr": 20500,
+    "emiLabel": "Monthly EMI starting from NPR 20,500",
+    "callouts": [
+      "Open for Booking",
+      "Easy EMI",
+      "Monthly EMI starting from NPR 20,500"
+    ]
+  },
+  "verifiedSpecs": {
+    "groundClearanceMm": 175,
+    "maxRangeKm": 340,
+    "motorPowerKw": 35,
+    "dcFastChargingAvailable": true,
+    "highlights": [
+      {
+        "title": "175 mm Ground Clearance",
+        "description": "Ample clearance designed for valley topography and unpaved road transitions."
+      },
+      {
+        "title": "Up to 340 km Range",
+        "description": "240 km on Base Variant, up to 340 km on Top (Premium) Variant."
+      },
+      {
+        "title": "35 kW Electric Motor",
+        "description": "Responsive instant electric drive across both variants."
+      },
+      {
+        "title": "DC Fast Charging",
+        "description": "Available on Top (Premium) Variant for rapid public charging."
+      },
+      {
+        "title": "5-Door Compact Cabin",
+        "description": "Practical 4-adult seating in a 5-door compact body."
+      },
+      {
+        "title": "Digital Touchscreen & Cluster",
+        "description": "Smart cockpit interface providing clear drive metrics."
+      },
+      {
+        "title": "Smart Electric Mobility",
+        "description": "Zero petrol dependence powered by domestic electricity."
+      }
+    ]
+  },
+  "unverifiedSpecs": {
+    "turningRadiusM": null,
+    "dimensionsMm": null,
+    "wheelbaseMm": null,
+    "curbWeightKg": null,
+    "torqueNm": null,
+    "topSpeedKmh": null,
+    "batteryCapacityKwh": null,
+    "acChargeHours": null,
+    "dcFastChargeMinutes": null,
+    "ipRating": null,
+    "suspension": null,
+    "tireSize": null,
+    "airbags": null
+  },
+  "variants": [
+    {
+      "id": "base",
+      "name": "Base Variant",
+      "fullName": "Jinpeng Lingbox AT — Base Variant",
+      "priceNpr": 2349000,
+      "priceFormatted": "NPR 23,49,000",
+      "rangeKm": 240,
+      "rangeFormatted": "240 km Range",
+      "motorPowerKw": 35,
+      "motorFormatted": "35 kW Electric Motor",
+      "groundClearanceMm": 175,
+      "groundClearanceFormatted": "175 mm Ground Clearance",
+      "dcFastCharging": false,
+      "image": "/car/ezgif-frame-060.jpg",
+      "highlights": [
+        "240 km Range",
+        "35 kW Electric Motor",
+        "175 mm Ground Clearance",
+        "5-Door Compact Urban Cabin"
+      ],
+      "popular": false
+    },
+    {
+      "id": "top",
+      "name": "Top Variant (Premium)",
+      "fullName": "Jinpeng Lingbox AT — Top Variant (Premium)",
+      "priceNpr": 2599000,
+      "priceFormatted": "NPR 25,99,000",
+      "rangeKm": 340,
+      "rangeFormatted": "340 km Range",
+      "motorPowerKw": 35,
+      "motorFormatted": "35 kW Electric Motor",
+      "groundClearanceMm": 175,
+      "groundClearanceFormatted": "175 mm Ground Clearance",
+      "dcFastCharging": true,
+      "dcFastChargingFormatted": "DC Fast Charging",
+      "image": "/car/ezgif-frame-160.jpg",
+      "highlights": [
+        "340 km Range",
+        "DC Fast Charging",
+        "35 kW Electric Motor",
+        "175 mm Ground Clearance"
+      ],
+      "popular": true
+    }
+  ],
+  "contact": {
+    "distributor": "Synergy Motors",
+    "showroomName": "Synergy Motors — Jinpeng Nepal Showroom",
+    "location": "Balkumari, Lalitpur",
+    "phoneNumbers": [
+      "+977 9714574057",
+      "+977 9849130768"
+    ],
+    "hours": "Contact for showroom hours",
+    "email": null,
+    "emergencyHotline": null
+  }
+}
