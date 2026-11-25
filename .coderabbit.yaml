@@ -15,7 +15,7 @@ reviews:
       - "main"
       - "master"
   path_filters:
-    - "!public/car/**"
+    - "!public/CAR FRAMES/**"
     - "!package-lock.json"
 chat:
   auto_reply: true

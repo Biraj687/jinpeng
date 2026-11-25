@@ -6,11 +6,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowUpRight } from "lucide-react";
 
-const TOTAL_FRAMES = 293;
+const TOTAL_FRAMES = 271;
 
 const getFramePath = (index: number): string => {
   const frameNum = String(index + 1).padStart(3, "0");
-  return `/car/ezgif-frame-${frameNum}.jpg`;
+  return `/CAR%20FRAMES/ezgif-frame-${frameNum}.jpg`;
 };
 
 export default function HeroScrollytelling() {
