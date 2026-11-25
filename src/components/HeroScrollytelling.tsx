@@ -292,7 +292,7 @@ export default function HeroScrollytelling() {
 
   return (
     <section ref={sectionRef} className="relative h-[400vh] bg-[#0B0C0E]">
-      <div className="sticky top-0 h-screen w-full overflow-hidden select-none bg-[#0B0C0E]">
+      <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#0B0C0E]">
         <canvas
           ref={canvasRef}
           className="absolute inset-0 w-full h-full block"

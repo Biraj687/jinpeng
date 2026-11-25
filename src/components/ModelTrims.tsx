@@ -87,10 +87,10 @@ export default function ModelTrims() {
   const animationClass = slideDirection === "right" ? "animate-car-slide-right" : "animate-car-slide-left";
 
   return (
-    <section id="models" className="relative py-20 sm:py-24 md:py-32 bg-[#0b0b0b] border-t border-white/10 select-none">
+    <section id="models" className="relative pt-6 pb-12 sm:pt-8 sm:pb-14 md:pt-8 md:pb-16 scroll-mt-16 bg-[#0b0b0b] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-14">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-5 sm:mb-6 gap-4">
           <div>
             <div className="text-[10px] font-semibold tracking-[0.24em] uppercase text-[#8d8d89] mb-2 font-[family-name:var(--font-dm-sans)]">
               Synergy Motors · Nepal
@@ -166,7 +166,7 @@ export default function ModelTrims() {
 
           {/* Center Studio Car Stage (lg:col-span-7) */}
           <div
-            className="lg:col-span-7 bg-[#000000] p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden border-b lg:border-b-0 lg:border-r border-white/10"
+            className="lg:col-span-7 bg-[#000000] p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden border-b lg:border-b-0 lg:border-r border-white/10"
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
           >
@@ -224,7 +224,7 @@ export default function ModelTrims() {
             </div>
 
             {/* Center Stage: Car Cutout with Cross-Slide Animation */}
-            <div className="relative my-6 sm:my-8 h-[240px] sm:h-[320px] md:h-[380px] w-full flex items-center justify-center select-none overflow-hidden">
+            <div className="relative my-2 sm:my-3 h-[200px] sm:h-[230px] md:h-[250px] w-full flex items-center justify-center select-none overflow-hidden">
               {/* Prev / Next Slider Arrows for Direct Variant Toggling */}
               <button
                 type="button"
@@ -304,18 +304,18 @@ export default function ModelTrims() {
           </div>
 
           {/* Right Editorial & Spec Panel (lg:col-span-4, bg-[#161616]) */}
-          <div className="lg:col-span-4 bg-[#161616] p-6 sm:p-8 flex flex-col justify-between space-y-6">
-            <div className="space-y-6">
+          <div className="lg:col-span-4 bg-[#161616] p-5 sm:p-6 flex flex-col justify-between space-y-3.5">
+            <div className="space-y-3.5">
               {/* Headline & Description with #d4202c Accent Bar */}
-              <div className="flex items-start gap-3.5">
+              <div className="flex items-start gap-3">
                 <div className="w-1 self-stretch bg-[#d4202c] rounded-full shrink-0" />
                 <div>
-                  <h4 className="font-[family-name:var(--font-space-grotesk)] text-lg sm:text-xl font-bold text-[#ecebe7] leading-snug">
+                  <h4 className="font-[family-name:var(--font-space-grotesk)] text-base sm:text-lg font-bold text-[#ecebe7] leading-snug">
                     {activeVariant === "top"
                       ? "Extended Range & Fast Charge"
                       : "Everyday Urban Electric"}
                   </h4>
-                  <p className="font-[family-name:var(--font-dm-sans)] text-xs text-[#bcbec0] mt-1.5 leading-relaxed font-normal">
+                  <p className="font-[family-name:var(--font-dm-sans)] text-xs text-[#bcbec0] mt-1 leading-relaxed font-normal">
                     {activeVariant === "top"
                       ? "Engineered for longer valley transitions and rapid turnarounds with public DC fast charging."
                       : "Optimized for daily Kathmandu urban commuting with agile compact dimensions and 175 mm ground clearance."}
@@ -324,8 +324,8 @@ export default function ModelTrims() {
               </div>
 
               {/* Showroom Price Block */}
-              <div className="border border-white/10 bg-[#0b0b0b] rounded-[16px] p-4 sm:p-5">
-                <div className="flex items-center justify-between mb-1">
+              <div className="border border-white/10 bg-[#0b0b0b] rounded-[16px] p-3.5 sm:p-4">
+                <div className="flex items-center justify-between mb-0.5">
                   <span className="font-[family-name:var(--font-dm-sans)] text-[10px] tracking-[0.18em] uppercase text-[#8d8d89] font-medium">
                     Showroom Price · Nepal
                   </span>
@@ -333,18 +333,18 @@ export default function ModelTrims() {
                     Official
                   </span>
                 </div>
-                <div className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-3xl font-bold text-[#ecebe7] tracking-tight">
+                <div className="font-[family-name:var(--font-space-grotesk)] text-2xl sm:text-[28px] font-bold text-[#ecebe7] tracking-tight">
                   {currentVariant.priceFormatted}
                 </div>
-                <div className="mt-2 text-xs font-[family-name:var(--font-dm-sans)] text-[#bcbec0] flex items-center gap-1.5">
+                <div className="mt-1.5 text-xs font-[family-name:var(--font-dm-sans)] text-[#bcbec0] flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#d4202c]" />
                   <span>Monthly EMI starting from NPR 20,500</span>
                 </div>
               </div>
 
               {/* 2x2 Spec Cards */}
-              <div className="grid grid-cols-2 gap-3">
-                <div className="bg-[#0b0b0b] border border-white/10 rounded-[16px] p-3.5">
+              <div className="grid grid-cols-2 gap-2.5">
+                <div className="bg-[#0b0b0b] border border-white/10 rounded-[14px] p-3">
                   <span className="text-[10px] tracking-[0.16em] uppercase text-[#8d8d89] block mb-1">
                     Range
                   </span>
@@ -356,7 +356,7 @@ export default function ModelTrims() {
                   </span>
                 </div>
 
-                <div className="bg-[#0b0b0b] border border-white/10 rounded-[16px] p-3.5">
+                <div className="bg-[#0b0b0b] border border-white/10 rounded-[14px] p-3">
                   <span className="text-[10px] tracking-[0.16em] uppercase text-[#8d8d89] block mb-1">
                     Motor
                   </span>
@@ -368,7 +368,7 @@ export default function ModelTrims() {
                   </span>
                 </div>
 
-                <div className="bg-[#0b0b0b] border border-white/10 rounded-[16px] p-3.5">
+                <div className="bg-[#0b0b0b] border border-white/10 rounded-[14px] p-3">
                   <span className="text-[10px] tracking-[0.16em] uppercase text-[#8d8d89] block mb-1">
                     Clearance
                   </span>
@@ -380,7 +380,7 @@ export default function ModelTrims() {
                   </span>
                 </div>
 
-                <div className="bg-[#0b0b0b] border border-white/10 rounded-[16px] p-3.5">
+                <div className="bg-[#0b0b0b] border border-white/10 rounded-[14px] p-3">
                   <span className="text-[10px] tracking-[0.16em] uppercase text-[#8d8d89] block mb-1">
                     Charging
                   </span>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#F3F4F6] dark:bg-[#08090B] border-t border-black/[0.08] dark:border-white/[0.08] text-[#5E636E] dark:text-[#8E939E] py-16 sm:py-20 select-none transition-colors duration-300">
+    <footer className="relative bg-[#F3F4F6] dark:bg-[#08090B] border-t border-black/[0.08] dark:border-white/[0.08] text-[#5E636E] dark:text-[#8E939E] py-16 sm:py-20 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-14">
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 pb-14 border-b border-black/[0.08] dark:border-white/[0.08]">
