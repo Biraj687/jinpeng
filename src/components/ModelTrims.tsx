@@ -265,42 +265,39 @@ export default function ModelTrims() {
             </div>
 
             {/* Stage Bottom Bar */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 z-10 pt-3 border-t border-white/10">
-              <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
-                <span className="px-3.5 py-1.5 rounded-full bg-[#161616] border border-white/10 text-[11px] font-semibold tracking-wider uppercase text-[#ecebe7]">
+            <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-3.5 z-10 pt-4 border-t border-white/10">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="px-3 py-1.5 rounded-full bg-[#161616] border border-white/10 text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase text-[#ecebe7] whitespace-nowrap">
                   {currentVariant.rangeFormatted}
                 </span>
                 {currentVariant.dcFastCharging && (
-                  <span className="px-3.5 py-1.5 rounded-full bg-[#161616] border border-[#d4202c]/40 text-[11px] font-semibold tracking-wider uppercase text-[#ecebe7] flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#d4202c]" />
+                  <span className="px-3 py-1.5 rounded-full bg-[#161616] border border-[#d4202c]/40 text-[10px] sm:text-[11px] font-semibold tracking-wider uppercase text-[#ecebe7] flex items-center gap-1.5 whitespace-nowrap">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#d4202c] shrink-0" />
                     <span>DC Fast Charging</span>
                   </span>
                 )}
-                <span className="px-3.5 py-1.5 rounded-full bg-[#161616] border border-white/10 text-[11px] font-semibold tracking-wider uppercase text-[#8d8d89] hidden md:inline-block">
-                  175 mm Clearance
-                </span>
               </div>
 
-              {/* Action Buttons: Prominent Switch Variant + Book CTA */}
-              <div className="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
+              {/* Action Buttons: Single-line Crisp Switch Variant + Book CTA */}
+              <div className="flex items-center gap-2.5 flex-wrap sm:flex-nowrap shrink-0">
                 <button
                   type="button"
                   onClick={toggleVariant}
-                  className="flex-1 sm:flex-initial px-4 py-2.5 rounded-full bg-[#1a1a1a] hover:bg-[#252525] border border-white/20 hover:border-[#d4202c]/60 text-[#ecebe7] text-xs font-semibold tracking-[0.12em] uppercase transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-md group"
-                  title="Click to Switch Variant"
-                  aria-label="Switch Variant"
+                  className="flex-1 sm:flex-initial px-4 py-2.5 rounded-full bg-[#161616] hover:bg-[#222222] border border-white/20 hover:border-[#d4202c]/70 text-[#ecebe7] text-[11px] font-semibold tracking-[0.12em] uppercase whitespace-nowrap transition-all duration-200 active:scale-[0.98] inline-flex items-center justify-center gap-2 cursor-pointer group"
+                  title={`Switch to ${activeVariant === "top" ? "Base Variant" : "Top Variant"}`}
+                  aria-label={`Switch to ${activeVariant === "top" ? "Base Variant" : "Top Variant"}`}
                 >
-                  <ArrowLeftRight className="w-3.5 h-3.5 text-[#d4202c] transition-transform duration-300 group-hover:rotate-180" />
-                  <span>Switch to {activeVariant === "top" ? "Base Variant" : "Top Variant"}</span>
+                  <ArrowLeftRight className="w-3.5 h-3.5 text-[#d4202c] shrink-0 transition-transform duration-300 group-hover:rotate-180" />
+                  <span>{activeVariant === "top" ? "Switch to Base" : "Switch to Top"}</span>
                 </button>
 
                 <button
                   type="button"
                   onClick={() => handleBookVariant(activeVariant)}
-                  className="flex-1 sm:flex-initial px-5 py-2.5 rounded-full bg-[#ecebe7] text-[#0b0b0b] text-xs font-bold tracking-[0.14em] uppercase hover:bg-white transition-colors duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-md"
+                  className="flex-1 sm:flex-initial px-5 py-2.5 rounded-full bg-[#ecebe7] hover:bg-white text-[#0b0b0b] text-[11px] font-bold tracking-[0.14em] uppercase whitespace-nowrap transition-all duration-200 active:scale-[0.98] inline-flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <span>Book {activeVariant === "top" ? "Top Variant" : "Base Variant"}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
+                  <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
                 </button>
               </div>
             </div>
@@ -401,24 +398,22 @@ export default function ModelTrims() {
             <button
               type="button"
               onClick={toggleVariant}
-              className="w-full py-3 px-4 rounded-[16px] bg-[#1a1a1a] hover:bg-[#222222] border border-white/15 hover:border-[#d4202c]/50 text-[#ecebe7] transition-all duration-200 flex items-center justify-between cursor-pointer group shadow-md"
+              className="w-full py-3.5 px-4 rounded-[16px] bg-[#0b0b0b] hover:bg-[#1f1f1f] border border-white/15 hover:border-[#d4202c]/60 text-[#ecebe7] transition-all duration-200 active:scale-[0.98] flex items-center justify-between gap-3 cursor-pointer group"
             >
-              <div className="flex items-center gap-3 text-left">
-                <div className="w-8 h-8 rounded-full bg-[#d4202c]/20 border border-[#d4202c]/40 flex items-center justify-center shrink-0">
-                  <ArrowLeftRight className="w-4 h-4 text-[#d4202c] transition-transform duration-300 group-hover:rotate-180" />
+              <div className="flex items-center gap-3 text-left min-w-0">
+                <div className="w-8 h-8 rounded-full bg-[#d4202c]/15 border border-[#d4202c]/35 flex items-center justify-center shrink-0">
+                  <ArrowLeftRight className="w-3.5 h-3.5 text-[#d4202c] transition-transform duration-300 group-hover:rotate-180" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <span className="text-[10px] text-[#8d8d89] uppercase tracking-[0.16em] block font-semibold">
-                    Compare Alternative
+                    Compare Other Variant
                   </span>
-                  <span className="text-xs font-bold text-[#ecebe7] block mt-0.5">
-                    Switch to {activeVariant === "top" ? "Base Variant · NPR 23,49,000" : "Top Variant (Premium) · NPR 25,99,000"}
+                  <span className="text-xs font-bold text-[#ecebe7] block mt-0.5 truncate">
+                    {activeVariant === "top" ? "Base Variant · NPR 23,49,000" : "Top Variant (Premium) · NPR 25,99,000"}
                   </span>
                 </div>
               </div>
-              <div className="text-[#d4202c] font-bold text-sm shrink-0 pl-2 group-hover:translate-x-1 transition-transform">
-                ⇄
-              </div>
+              <ChevronRight className="w-4 h-4 text-[#8d8d89] group-hover:text-[#ecebe7] group-hover:translate-x-0.5 transition-all shrink-0" />
             </button>
           </div>
         </div>
